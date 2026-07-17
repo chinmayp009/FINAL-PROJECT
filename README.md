@@ -1,22 +1,18 @@
-# FINAL-PROJECT
+# 🤖 AI Customer Support Bot
 
-# 🌍 AI Travel Planner Chatbot
-
-An AI-powered travel assistant that helps users plan trips by answering travel-related questions, suggesting destinations, creating itineraries, providing travel tips, and recommending places to visit based on user preferences.
+An AI-powered customer support chatbot built using **Python**, **Streamlit**, and the **Google Gemini API**. The chatbot provides instant responses to customer queries, helping businesses automate customer support and improve user experience.
 
 ---
 
 ## 📌 Features
 
-- 💬 Interactive AI chatbot interface
-- 🗺️ Destination recommendations
-- 📅 Personalized travel itinerary generation
-- 💰 Budget-friendly travel suggestions
-- 🌦️ Travel tips and essential information
-- 🏨 Hotel and accommodation suggestions (optional)
-- 🍽️ Restaurant recommendations (optional)
-- ✈️ Transportation guidance
-- 📱 Simple and user-friendly interface
+- 💬 AI-powered conversational chatbot
+- ⚡ Instant customer support responses
+- 🧠 Natural language understanding using Google Gemini
+- 📄 Answers based on company documents or FAQs (if provided)
+- 🎨 Clean and user-friendly Streamlit interface
+- 🔒 Secure API key management using `.env`
+- 📱 Responsive web application
 
 ---
 
@@ -25,30 +21,22 @@ An AI-powered travel assistant that helps users plan trips by answering travel-r
 - Python
 - Streamlit
 - Google Gemini API
-- HTML/CSS (for UI customization)
-- dotenv (Environment Variables)
+- python-dotenv
+- HTML/CSS (optional UI customization)
 
 ---
 
 ## 📂 Project Structure
 
 ```
-AI-Travel-Planner/
+AI-Customer-Support-Bot/
 │
-├── app.py                 # Main application
+├── app.py                 # Main Streamlit application
 ├── requirements.txt       # Project dependencies
-├── .env                   # API key (Not uploaded to GitHub)
+├── .env                   # Stores API key (not uploaded to GitHub)
 ├── README.md
-├── chatbot
-    ├── __init__.py
-    ├── ai.py
-    ├── prompts.py
-├── static
-    ├── script.js
-    ├── style.css
-├── templates
-    ├── index.html
-└── venv
+├── data/                  # Company FAQs or documents (optional)
+└── assets/                # Images and icons (optional)
 ```
 
 ---
@@ -58,25 +46,25 @@ AI-Travel-Planner/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/AI-Travel-Planner.git
+git clone https://github.com/yourusername/AI-Customer-Support-Bot.git
 ```
 
-### 2. Navigate to the project
+### 2. Navigate to the project folder
 
 ```bash
-cd AI-Travel-Planner
+cd AI-Customer-Support-Bot
 ```
 
 ### 3. Create a virtual environment (Optional)
 
-Windows
+**Windows**
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-Linux / Mac
+**Linux / macOS**
 
 ```bash
 python3 -m venv venv
@@ -93,85 +81,71 @@ pip install -r requirements.txt
 
 ## 🔑 API Key Setup
 
-Create a `.env` file in the project folder.
-
-Add:
+Create a `.env` file in the project directory.
 
 ```env
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-Replace `YOUR_GEMINI_API_KEY` with your actual API key.
+Replace `YOUR_GEMINI_API_KEY` with your own Gemini API key.
 
 ---
 
 ## ▶️ Running the Project
 
-Run the following command:
+Start the application with:
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open automatically in your browser.
+Then open the local URL displayed in your terminal (usually `http://localhost:8501`).
 
 ---
 
-## 💡 Example Questions
+## 💬 Example Questions
 
-- Plan a 5-day trip to Goa.
-- Best places to visit in Japan.
-- Suggest a budget trip under ₹25,000.
-- What should I pack for Ladakh?
-- Create a honeymoon itinerary for Bali.
-- Best time to visit Switzerland.
-- Family trip to Kerala for 4 days.
-
----
-
-## 📸 Screenshots
-
-Add screenshots of your chatbot here.
-
-Example:
-
-```
-screenshots/
-    home.png
-    chat.png
-```
+- What are your business hours?
+- How can I track my order?
+- What is your refund policy?
+- How do I reset my password?
+- Do you offer international shipping?
+- How can I contact customer support?
+- What payment methods do you accept?
 
 ---
+
 
 ## 🚀 Future Improvements
 
 - User authentication
-- Save travel history
-- PDF itinerary download
-- Flight search integration
-- Hotel booking integration
-- Google Maps integration
-- Weather forecast support
-- Voice interaction
+- Conversation history
 - Multi-language support
+- Voice-based interaction
+- Sentiment analysis
+- Live chat handoff to human agents
+- Database integration
+- FAQ management dashboard
+- Email support integration
+- Analytics and reporting
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome!
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -179,6 +153,4 @@ This project is licensed under the MIT License.
 
 **Chinmay Patil**
 
-Cybersecurity Student | AI & Python Enthusiast
-
-GitHub: https://github.com/yourusername
+- GitHub: https://github.com/yourusername

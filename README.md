@@ -39,7 +39,16 @@ AI-Travel-Planner/
 ├── requirements.txt       # Project dependencies
 ├── .env                   # API key (Not uploaded to GitHub)
 ├── README.md
-└── assets/                # Images or other resources (optional)
+├── chatbot
+    ├── __init__.py
+    ├── ai.py
+    ├── prompts.py
+├── static
+    ├── script.js
+    ├── style.css
+├── templates
+    ├── index.html
+└── venv
 ```
 
 ---
@@ -173,5 +182,3 @@ This project is licensed under the MIT License.
 Cybersecurity Student | AI & Python Enthusiast
 
 GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
